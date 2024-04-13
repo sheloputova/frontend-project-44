@@ -6,4 +6,4 @@ const askName = () => {
   return userName;
 };
 
-export { askName };
+export default askName;
