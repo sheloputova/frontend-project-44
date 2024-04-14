@@ -22,4 +22,6 @@ export const runGame = (gameRules, getQuestionAndAnswer) => {
     }
     console.log("Correct!");
   }
+
+  console.log(`Congratulations, ${userName}!`);
 };
