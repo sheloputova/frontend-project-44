@@ -23,10 +23,10 @@ const playCalcGame = () => {
     const operation = operations[getRandomNumber(operations.length)];
     const question = `${numOne} ${operation} ${numTwo}`;
 
-    const answer = calculate(numOne, numTwo, operation).toString();
+    const correctAnswer = calculate(numOne, numTwo, operation).toString();
 
     // Показываем вопрос и проверяем ответ пользователя
-    return { question, answer };
+    return { question: `${question}`, answer: correctAnswer };
   };
   runGame(gameRules, getQuestionAndAnswer);
 };
