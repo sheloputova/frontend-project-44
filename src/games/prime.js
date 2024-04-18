@@ -1,17 +1,16 @@
 import { getRandomNumber, runGame } from "../../index.js";
 
 // Проверяем четное ли число
-const isPrime = (number) => {
-  if (number < 2) {
+const isPrime = (num) => {
+  if (num < 2) {
     return false;
   }
-  for (let i = 2; i < number; i++) {
-    if (number % i === 0) {
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
       return false;
-    } else {
-      return true;
     }
   }
+  return true;
 };
 
 const gameRules =
