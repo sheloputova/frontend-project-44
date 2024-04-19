@@ -1,4 +1,4 @@
-import { getRandomNumber, runGame } from "../../index.js";
+import { getRandomNumber, runGame } from '../../index.js';
 
 // Находим НОД
 const findGCD = (a, b) => {
@@ -8,7 +8,7 @@ const findGCD = (a, b) => {
   return findGCD(b, a % b);
 };
 
-const gameRules = "Find the greatest common divisor of given numbers.";
+const gameRules = 'Find the greatest common divisor of given numbers.';
 
 const playGcdGame = () => {
   const getQuestionAndAnswer = () => {

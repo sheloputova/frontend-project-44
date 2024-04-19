@@ -1,4 +1,4 @@
-import { getRandomNumber, runGame } from "../../index.js";
+import { getRandomNumber, runGame } from '../../index.js';
 
 // Проверяем четное ли число
 const isPrime = (num) => {
@@ -19,7 +19,7 @@ const gameRules =
 const playPrimeGame = () => {
   const getQuestionAndAnswer = () => {
     const question = getRandomNumber(100);
-    const correctAnswer = isPrime(question) ? "yes" : "no";
+    const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
     // Показываем вопрос и проверяем ответ пользователя
     return { question: `${question}`, answer: correctAnswer };

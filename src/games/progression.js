@@ -1,8 +1,8 @@
-import { getRandomNumber, runGame } from "../../index.js";
+import { getRandomNumber, runGame } from '../../index.js';
 
 // Создаем арифметискию прогрессию
 
-const gameRules = "What number is missing in the progression?";
+const gameRules = 'What number is missing in the progression?';
 
 const getArrProgression = (start, length, interval) => {
   const arrProgression = [];
@@ -28,9 +28,9 @@ const playProgressionGame = () => {
     );
     const progressionHidenIndex = getRandomNumber(progressionLength);
     const correctAnswer = arrProgression[progressionHidenIndex].toString();
-    arrProgression[progressionHidenIndex] = "..";
+    arrProgression[progressionHidenIndex] = '..';
 
-    const question = `${arrProgression.join(" ")}`;
+    const question = `${arrProgression.join(' ')}`;
 
     // Показываем вопрос и проверяем ответ пользователя
     return { question: `${question}`, answer: correctAnswer };

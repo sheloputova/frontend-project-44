@@ -1,25 +1,25 @@
-import { getRandomNumber, runGame } from "../../index.js";
+import { getRandomNumber, runGame } from '../../index.js';
 
 const calculate = (numOne, numTwo, operator) => {
   switch (operator) {
-    case "-":
+    case '-':
       return numOne - numTwo;
-    case "+":
+    case '+':
       return numOne + numTwo;
-    case "*":
+    case '*':
       return numOne * numTwo;
     default:
-      return "Something went wrong. Try again and again!";
+      return 'Something went wrong. Try again and again!';
   }
 };
 
-const gameRules = "What is the result of the expression?";
+const gameRules = 'What is the result of the expression?';
 
 const playCalcGame = () => {
   const getQuestionAndAnswer = () => {
     const numOne = getRandomNumber(10);
     const numTwo = getRandomNumber(10);
-    const operations = ["+", "-", "*"];
+    const operations = ['+', '-', '*'];
     const operation = operations[getRandomNumber(operations.length)];
     const question = `${numOne} ${operation} ${numTwo}`;
 
