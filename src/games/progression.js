@@ -17,13 +17,13 @@ const getArrProgression = (start, length, interval) => {
 
 const playProgressionGame = () => {
   const getQuestionAndAnswer = () => {
-    const progressionStart = getRandomNumber(10) + 1;
-    const progressionLength = getRandomNumber(10) + 5;
-    const progressionInterval = getRandomNumber(6) + 5;
-    const arrProgression = getArrProgression(progressionStart, progressionLength, progressionInterval);
-    const progressionHidenIndex = getRandomNumber(progressionLength);
-    const correctAnswer = arrProgression[progressionHidenIndex].toString();
-    arrProgression[progressionHidenIndex] = '..';
+    const start = getRandomNumber(10) + 1;
+    const length = getRandomNumber(10) + 5;
+    const interval = getRandomNumber(6) + 5;
+    const arrProgression = getArrProgression(start, length, interval);
+    const hidenIndex = getRandomNumber(length);
+    const correctAnswer = arrProgression[hidenIndex].toString();
+    arrProgression[hidenIndex] = '..';
 
     const question = `${arrProgression.join(' ')}`;
 
