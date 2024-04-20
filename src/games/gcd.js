@@ -9,7 +9,6 @@ const findGCD = (a, b) => {
 };
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
-
 const playGcdGame = () => {
   const getQuestionAndAnswer = () => {
     const num1 = getRandomNumber(100);

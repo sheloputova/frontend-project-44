@@ -14,7 +14,6 @@ const calculate = (numOne, numTwo, operator) => {
 };
 
 const gameRules = 'What is the result of the expression?';
-
 const playCalcGame = () => {
   const getQuestionAndAnswer = () => {
     const numOne = getRandomNumber(10);
