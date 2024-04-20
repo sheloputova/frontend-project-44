@@ -19,7 +19,7 @@ const getArrProgression = (start, length, interval) => {
 const playProgressionGame = () => {
   const getQuestionAndAnswer = () => {
     const progressionStart = getRandomNumber(10) + 1;
-    const progressionLength = getRandomNumber(10) + 1;
+    const progressionLength = getRandomNumber(10) + 5;
     const progressionInterval = getRandomNumber(6) + 5;
     const arrProgression = getArrProgression(
       progressionStart,
