@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import askName from './src/cli.js';
 
-export const getRandomNumber = (max) => Math.round(Math.random() * max);
+export const getRandomNumber = (max) => Math.floor(Math.random() * max);
 
 export const runGame = (gameRules, getQuestionAndAnswer) => {
   const userName = askName();
